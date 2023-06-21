@@ -11,3 +11,12 @@
     background-color: var(--branco)
 
 }
+
+.contaner {
+    display: flex;
+    align-items: center;
+  }
+  
+  .container__image {
+    padding: 1em;
+  }
