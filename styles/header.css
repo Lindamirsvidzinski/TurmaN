@@ -7,16 +7,19 @@
     height: 24px;
 }
 
-.cabecalho{
-    background-color: var(--branco)
-
+.conteiner{
+  display: flex;
+  justify-content: space-between;
 }
 
-.container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .container__imagem {
-    padding: 1em;
-  }
+.conteiner__imagem{
+  padding: 1em;
+}
+.lista__menu{
+  display: none;
+  position: absolute;
+  top:100%;
+}
+.conteiner__botao:checked~.lista__menu{
+  display: block;
+}
