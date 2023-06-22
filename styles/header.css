@@ -1,35 +1,23 @@
-.cabecalho{
-  display: flex;
-  justify-content: space-between;
+.cabecalho {
   background-color: var(--branco);
-  align-items: center;
-  position: relative;
-
+  display: flex;
+  justify-content: space-between;  
 }
 
-.cabecalho__menu-hamburguer{
+.cabecalho__menu {
   display: inline-block;
-  background-image: url("../img/Menu.svg");
+  background-image: url(../img/Menu.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center;  
   width: 24px;
   height: 24px;
 }
 
-.conteiner{
+.contaner {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
-.conteiner__imagem{
+.container__image {
   padding: 1em;
-}
-.lista__menu{
-  display: none;
-  position: absolute;
-  top: 100%;
-}
-.conteiner__botao:checked~.lista__menu{
-
-  display: block;
 }
