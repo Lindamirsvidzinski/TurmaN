@@ -1,23 +1,35 @@
-.cabecalho {
-  background-color: var(--branco);
+.cabecalho{
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
+  background-color: var(--branco);
+  align-items: center;
+  position: relative;
+
 }
 
-.cabecalho__menu {
+.cabecalho__menu{
   display: inline-block;
-  background-image: url(../img/Menu.svg);
+  background-image: url("../img/Menu.svg");
   background-repeat: no-repeat;
-  background-position: center;  
+  background-position: center;
   width: 24px;
   height: 24px;
 }
 
-.contaner {
+.conteiner{
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 
-.container__image {
+.conteiner__imagem{
   padding: 1em;
+}
+.lista__menu{
+  display: none;
+  position: absolute;
+  top:100%;
+}
+
+.conteiner__botao:checked~.lista__menu{
+  display: block;
 }
